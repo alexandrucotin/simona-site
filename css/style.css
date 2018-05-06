@@ -1,0 +1,180 @@
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.style-navbar-text{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-family: inherit;
+	line-height: 3em;
+}
+
+.scrolled {
+	background-color: #20a4de;
+}
+
+.post {
+	border-bottom: 1px solid lightgrey;
+	margin-bottom: 3.5em;
+}
+
+.title-article {
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #20a4de;
+	font-size:2em;
+}
+
+.data{
+	color: #8c8c8c;
+}
+
+.body-post {
+	font-size: 1em;
+	color: #8c8c8c;
+	line-height: 2em;
+}
+
+
+.body-post::first-letter{
+	color: #20a4de;
+	font-size:1.5em;
+}
+
+.img-post{
+	margin-bottom: 2em;
+}
+
+.footer-post {
+	font-size: 1.2em;
+	margin-top: 2em;
+	margin-bottom: .3em;
+}
+
+.a-modify {
+	text-decoration: none;
+	color:#20a4de;
+}
+
+
+.a-modify:hover {
+	color:#20a4de ;
+	text-decoration:none;
+}
+
+.sub-title {
+	color: #595959;
+	font-weight: lighter;
+}
+
+.about{
+	margin-bottom: 3.5em;
+}
+
+.about-post {
+	text-align: center;
+	font-size: 1em;
+	color: #8c8c8c;
+	line-height: 2em;
+	
+}
+
+.about-post::first-letter{
+	color: #20a4de;
+	font-size:1.5em;
+}
+
+.intro-img{
+	height:400px;
+}
+
+.bkg-animated{
+	height: 384px;
+	position: absolute;
+  	margin: 0;
+  	animation-name: slide;
+  	animation-duration: 30s;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {left:-400px;}
+    100% { left:2000px;}
+}
+
+.animation-from-left{
+	background-repeat: repeat;
+	height: 150px;
+	position: absolute;
+	animation-duration: 3s;
+  	animation-name: slidefromleft;
+  	animation-fill-mode: forwards;
+}
+
+ @keyframes slidefromleft {
+    0%   {left:-400px; top:100px;}
+    100% {left:600px; top:100px;}
+}
+
+.animation-from-right{
+	height: 150px;
+	position: absolute;
+	animation-duration:3s;
+  	animation-name: slidefromright;
+  	animation-fill-mode: forwards;
+}
+
+ @keyframes slidefromright {
+    0%   {right:-400px; top:130px;}
+    100% {right:600px; top:130px;}
+}
+
+
+.animated-name{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 5rem;
+  	position: absolute;
+ 	top: 6.8rem;
+  	left: 35%;
+  	opacity: 0;
+  	color: #20a4de;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	animation-name: fadeInOut;
+  	animation-delay: 2.7s;
+  	animation-duration: 3s;
+  	animation-fill-mode: forwards;
+}
+
+
+.animated-surname{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 5rem;
+  	position: absolute;
+ 	top: 9rem;
+  	right: 36%;
+  	opacity: 0;
+  	color: #20a4de;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	animation-name: fadeInOut;
+  	animation-delay: 2.7s;
+  	animation-duration: 3s;
+  	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
